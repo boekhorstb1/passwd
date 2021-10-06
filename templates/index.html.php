@@ -1,25 +1,3 @@
-
-
-<script type="application/json" id="hordeVars">
-{
-  url: '<?php echo $this->escape($this->url) ?>',
-  userId: '<?php echo $this->escape($this->userid) ?>',
-  backend: '<?php echo $this->backend ?>',
-  <?php if ($this->showlist): ?>
-
-    backends: [
-      <?php foreach ($this->backends as $key => $backend): ?>
-        '<?php echo $this->escape($backend['name']) ?>'
-      <?php endforeach ?>
-    ],
-  <?php endif; ?>
-}
-</script>
-
-<div id="react-login"></div>
-
-
-
 <form method="post" action="<?php echo $this->escape($this->url) ?>" id="passwd" name="passwd">
 <?php echo $this->formInput ?>
 <?php if (!$this->showlist): ?>
