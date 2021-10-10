@@ -49,6 +49,9 @@
     "autoload": {
         "psr-0": {
             "Passwd": "lib/"
+        },
+        "psr-4": {
+            "Horde\\Passwd\\": "src/"
         }
     }
 }
